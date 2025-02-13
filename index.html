@@ -31,7 +31,7 @@
 <body class="gradient-background">
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
-      <img id="imageDisplay" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnoydDk5cndqdjZ0NHlraXZ2a3g2MjB4cGYxYWszc3NnZGEzcGJhZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S1SF4IptjsvPl93ZT8/giphy.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
+      <img id="imageDisplay" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajNmc2VjMzZ1Z2E2cmJrc3F0Y2dpa2d3NTUyZTBmZXFwd3J3azVvdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUOwG6pVp3AMC5ocVO/giphy.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Carlyn will you be my Valentine?</h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
@@ -59,14 +59,14 @@
     let buttonWidth = 80;
     let fontSize = 20; // Starting font size in pixels
     const imagePaths = [
-      "https://github.com/HelloIamRevy/Valentinesday/blob/main/image1.gif",
-      "./images/image2.gif",
-      "./images/image3.gif",
-      "./images/image4.gif",
-      "./images/image5.gif",
-      "./images/image6.gif",
-      "./images/image7.gif",
-      "./images/image6.gif",
+      "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTNlNXh6OTV2Y3ppcDZneWF1MTdoZ3VveHRtaDg1ZWw4cGFhbGhnbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7SF5scGB2AFrgsXP63/giphy.gif",
+      "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW9odHptaXgxNGxlYXgwbWE0N2VjMXozZ2tmaXNudWJmNGl0cGU4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2tSnssrUEVALBnBRmQ/giphy.gif",
+      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjJlOWtybDN3b2FpOWc3ZWlvdzZ0MDliOW1yb3UydTRkaXE1OHgwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J1XSaMzkdlqDl89NVf/giphy.gif",
+      "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGR4MjhqOGlxaGY5cTV3dmVjMndqMXh5ZTQydTY1b2lwa2xubDJtZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wlZbYS5GZthOgHhrgf/giphy.gif",
+      "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTNlNXh6OTV2Y3ppcDZneWF1MTdoZ3VveHRtaDg1ZWw4cGFhbGhnbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7SF5scGB2AFrgsXP63/giphy.gif",
+      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3ZyNm5hM3BhZDA4dzNzenVzZTJnaWlvdDQzeGVwbWh5dXVyZGJmOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kaWcPwKBjyC5O/giphy.gif",
+      "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXliY2lsY2t4N2lnZmZ4M2tqYzVqdTRycmFxYnp5aTJkamp2NHp1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XaikVL6qbrJSJoQmCR/giphy.gif",
+      
     ];
   
     noButton.addEventListener('click', function() {
@@ -80,13 +80,13 @@
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
-          noButton.textContent = ["No", "Are you sure?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry...", "Pleeeeasse"][noClickCount];
+          noButton.textContent = ["No", "WHY!?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "Pleaaseee", ][noClickCount];
         }
       }
     });
   
     yesButton.addEventListener('click', () => {
-      imageDisplay.src = './images/image7.gif'; // Change to image7.gif
+      imageDisplay.src = 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXliY2lsY2t4N2lnZmZ4M2tqYzVqdTRycmFxYnp5aTJkamp2NHp1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XaikVL6qbrJSJoQmCR/giphy.gif'; // Change to image7.gif
       valentineQuestion.textContent = "Yayyy!! :3"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
